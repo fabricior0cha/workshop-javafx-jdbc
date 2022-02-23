@@ -61,7 +61,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 		Stage parentStage = Utils.currentStage(event);
 		Department department = new Department();
 
-		createDialogForm(department, parentStage, "/gui/DepartmentFormer.fxml");
+		createDialogForm(department, parentStage, "/gui/DepartmentForm.fxml");
 	}
 
 	public void setDepartmentService(DepartmentService service) {
@@ -136,7 +136,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 				}
 				setGraphic(button);
 				button.setOnAction(
-						event -> createDialogForm(obj, Utils.currentStage(event), "/gui/DepartmentFormer.fxml"));
+						event -> createDialogForm(obj, Utils.currentStage(event), "/gui/DepartmentForm.fxml"));
 				;
 			}
 		});
